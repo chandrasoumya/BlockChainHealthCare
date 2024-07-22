@@ -1,0 +1,26 @@
+constraint - 1. limited in a heath care provider institute.
+2. stores only patient's data.
+3. only doctors of the institute can get access.
+4. only some admins can grant access.
+5. only owner can appoint admin. he himself is an admin.
+6. patients don't have any access.
+
+features - 1. it will store patients bio data , his past health issues along with doctor name.
+2. doctors can write new patient record and read past.
+
+data base - smart contract -
+* have a owner - have access to addadmin() , removeadmin()
+* have admins - have access to adddoctors() , removedoctors()
+* struct patient - contains - struct biodata - array of struct records
+* struct biodata - contains - name , dob , address , phone no.
+* struct records - contains - date , doctor(who had checked up) , health issue
+* mapping (patient id -> struct patient)
+* showpatient()
+* writenewrecord()
+* deleterecord()
+* editrecord()
+* deletepatient()
+
+
+
+
